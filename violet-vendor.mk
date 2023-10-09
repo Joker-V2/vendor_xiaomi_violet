@@ -21,7 +21,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/etc/camera/lf_facerank_model.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/lf_facerank_model.bin \
     vendor/xiaomi/violet/proprietary/vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin \
     vendor/xiaomi/violet/proprietary/vendor/etc/camera/vidhance_calibration_F7B:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration_F7B \
-    vendor/xiaomi/violet/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service.rc \
     vendor/xiaomi/violet/proprietary/vendor/etc/scve/facereco/gModel.dat:$(TARGET_COPY_OUT_VENDOR)/etc/scve/facereco/gModel.dat \
     vendor/xiaomi/violet/proprietary/vendor/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_dri_0.json \
     vendor/xiaomi/violet/proprietary/vendor/etc/sensors/config/bma2x2_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bma2x2_0.json \
@@ -197,7 +196,6 @@ PRODUCT_PACKAGES += \
     libdrc \
     libqtigef \
     libsurround_3mic_proc \
-    android.hardware.sensors@2.0-impl \
     com.qti.eeprom.truly_cmb433 \
     com.qti.sensor.imx318 \
     com.qti.sensor.imx334 \
@@ -330,6 +328,5 @@ PRODUCT_PACKAGES += \
     libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1 \
     libvidhance \
     sensors.ssc \
-    android.hardware.sensors@2.0-service \
     sensors.qti \
     thermal-engine

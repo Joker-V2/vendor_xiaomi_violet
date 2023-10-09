@@ -196,23 +196,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "android.hardware.sensors@2.0-impl",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.sensors@2.0-impl.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "com.qti.eeprom.truly_cmb433",
 	owner: "xiaomi",
 	strip: {
@@ -2539,19 +2522,6 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	check_elf_files: false,
 	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.sensors@2.0-service",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
 	soc_specific: true,
 }
 
